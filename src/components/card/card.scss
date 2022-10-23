@@ -4,7 +4,14 @@ $bright-color: #fff;
     right: 0;
     left: 0;
 }
-
+.card-block {
+    display: flex;
+    .see-comments-btn {
+        width: 40px;
+        height: 20px;
+        margin-left: 10px;
+    }
+}
 .card {
     &__wrapper {
         background: url('https://nbi.ku.dk/Nyheder/temaer/galakser/andromeda1100x600.jpg') no-repeat
@@ -14,6 +21,13 @@ $bright-color: #fff;
         height: 500px;
         position: relative;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+        margin-bottom: 40px;
+        transition: 300ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+            width: 360px;
+            height: 510px;
+        }
     }
     &__info {
         @include bottom;
@@ -33,7 +47,7 @@ $bright-color: #fff;
         background-color: #d8dce9;
         display: flex;
         align-items: center;
-        padding: 20px;
+        padding: 12px 20px;
         @include bottom();
         bottom: 0;
         img {
@@ -54,6 +68,18 @@ $bright-color: #fff;
         }
         p b {
             font-style: italic;
+        }
+    }
+}
+
+.actions {
+    display: flex;
+    .comment-form {
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        button {
+            padding-top: 3px;
         }
     }
 }

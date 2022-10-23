@@ -4,6 +4,7 @@ import {
     FETCH_POSTS_REQUEST,
     FETCH_POSTS_SUCCESS
 } from '../actionTypes/contentAT';
+import { Post } from '../../types/content';
 
 export const fetchPostsRequest = () =>
     createAction<typeof FETCH_POSTS_REQUEST, undefined>(FETCH_POSTS_REQUEST, undefined);

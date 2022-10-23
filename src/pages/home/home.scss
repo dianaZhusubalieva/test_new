@@ -1,8 +1,12 @@
-.main-page{
-  &__wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-  }
+.main-page {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        flex-direction: column;
+    }
+}
+.btn-wrapper {
+    margin-left: 30vw;
 }

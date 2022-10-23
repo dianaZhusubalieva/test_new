@@ -1,0 +1,13 @@
+.detail-page__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .comments-block {
+        width: 350px;
+        padding: 20px;
+        min-height: 200px;
+        background: #d8dce9;
+        border-radius: 12px;
+    }
+}

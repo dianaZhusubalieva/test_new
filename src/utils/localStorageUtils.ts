@@ -2,7 +2,7 @@ import { RootState } from '../redux/store';
 
 export const loadState = () => {
     try {
-        const serializedStore = localStorage.getItem('BalanceAdmin');
+        const serializedStore = localStorage.getItem('blog');
         if (serializedStore === null) {
             return undefined;
         }
@@ -22,7 +22,7 @@ export const saveState = (store: any) => {
             errors: undefined
         });
 
-        localStorage.setItem('BalanceAdmin', serializedStore);
+        localStorage.setItem('blog', serializedStore);
     } catch (err: any) {
         new Error(err);
     }

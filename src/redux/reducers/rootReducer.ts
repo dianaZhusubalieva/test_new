@@ -1,8 +1,12 @@
-import {combineReducers} from "redux";
-import contentReducer from "./contentReducer";
+import { combineReducers } from 'redux';
+import contentReducer from './contentReducer';
+import errorReducer from './errorReducer';
+import loadingReducer from './loadingReducer';
 
 const rootReducer = combineReducers({
- content: contentReducer
+    errors: errorReducer,
+    loading: loadingReducer,
+    content: contentReducer
 });
 
 export default rootReducer;
