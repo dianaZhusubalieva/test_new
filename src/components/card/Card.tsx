@@ -3,7 +3,7 @@ import './card.scss';
 import { Post } from '../../types/content';
 import Button from 'react-bootstrap/Button';
 import { FormControl } from 'react-bootstrap';
-import { postComment } from '../../api/postsApi';
+import { postComment } from '../../api/mainApi';
 import { useSnackbar } from 'notistack';
 import { getApiError, getResponseError } from '../../api/utils';
 import { useNavigate } from 'react-router-dom';

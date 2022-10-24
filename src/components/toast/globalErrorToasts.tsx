@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSnackbar } from 'notistack';
-import { FETCH_POSTS } from '../redux/actionTypes/contentAT';
-import { RootState } from '../redux/store';
-import { ErrorKeys, ErrorState } from '../types/loadingTypes';
+import { FETCH_POSTS } from '../../redux/actionTypes/contentAT';
+import { RootState } from '../../redux/store';
+import { ErrorKeys, ErrorState } from '../../types/loadingTypes';
 
 const actions: ErrorKeys[] = [FETCH_POSTS];
 

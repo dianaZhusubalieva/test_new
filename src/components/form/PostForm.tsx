@@ -6,7 +6,7 @@ import {useFormik} from 'formik';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import {formikInputProps} from '../../utils/formik';
-import {createPost, editPost} from '../../api/postsApi';
+import {createPost, editPost} from '../../api/mainApi';
 import {useSnackbar} from 'notistack';
 import {AxiosError, AxiosResponse} from 'axios';
 import {getApiError, getResponseError} from '../../api/utils';

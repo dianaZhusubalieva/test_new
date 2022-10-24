@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getPost } from '../api/postsApi';
-import { RetrievedPost } from '../types/content';
+import { getPost } from '../../api/mainApi';
+import { RetrievedPost } from '../../types/content';
 import './styles.scss';
-import '../components/card/card.scss';
+import '../../components/card/card.scss';
 
 const DetailPostPage = () => {
     const { id } = useParams();

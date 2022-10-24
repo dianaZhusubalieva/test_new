@@ -1,5 +1,5 @@
 import { fetchPostsError, fetchPostsRequest, fetchPostsSuccess } from '../actionCreators/contentAC';
-import { getPosts } from '../../api/postsApi';
+import { getPosts } from '../../api/mainApi';
 import { getApiError, getResponseError } from '../../api/utils';
 import { AppThunkDispatch } from '../../utils/tsUtils';
 
